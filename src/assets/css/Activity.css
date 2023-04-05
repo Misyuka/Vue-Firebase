@@ -1,0 +1,155 @@
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.page-name {
+    margin-top: 10px;
+    font: 600 30px Arial;
+}
+
+.activity-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.activity-body>div {
+    display: flex;
+    align-items: center;
+}
+
+.input-description {
+    min-width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-control {
+    padding: 0 10px 0 10px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+}
+
+.readonly {
+    pointer-events: none;
+}
+
+.room-select {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    width: 162px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-top: none;
+    justify-content: space-between;
+}
+
+.room-content {
+    min-width: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    max-height: 280px;
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.content {
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.room-content::-webkit-scrollbar {
+    display: none;
+}
+
+.content:hover {
+    background-color: #d8efff;
+    border: 1px solid #9ccdf0;
+}
+
+.room-dropbtn {
+    cursor: pointer;
+    height: 40px;
+    width: 132px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+
+.actions {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.back {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #ff4646;
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: #ca2b2b;
+}
+
+.save {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 15px;
+    background-color: #28a745;
+}
+
+.save:hover {
+    background-color: #3e8e41;
+}
+
+input[type="file"] {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: dodgerblue;
+    border: thin solid grey;
+    border-radius: 5px;
+    height: 37px;
+}
+
+.file-display {
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: calc(100% - 2px);
+}
